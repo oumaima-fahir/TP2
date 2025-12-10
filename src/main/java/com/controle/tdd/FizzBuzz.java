@@ -5,6 +5,11 @@ public class FizzBuzz {
           if(nbr%3 == 0) {
               return "Fizz";
           }
+
+        if(nbr%5 == 0) {
+            return "Buzz";
+        }
+
         return "";
     }
 }

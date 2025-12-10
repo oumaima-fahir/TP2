@@ -10,8 +10,14 @@ class FizzBuzzTest {
 
     @Test
     void fizzBuzz_de_3_devrait_retourner_Fizz() {
-     FizzBuzz fb = new FizzBuzz();
-     String r = fb.de(3);
+
+     String r = FizzBuzz.de(3);
      assertEquals("Fizz",r, "doit retourner Fizz");
     }
+    @Test
+    void fizzBuzz_de_5_devrait_retourner_Buzz() {
+        String r = FizzBuzz.de(5);
+        assertEquals("Buzz",r, "doit retourner Buzz");
+    }
+
 }
